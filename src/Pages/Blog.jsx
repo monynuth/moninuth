@@ -4,6 +4,9 @@ import HomeHeader from '../Component/Home/HomeHeader'
 import AboutBreadcrum from '../Component/About/AboutBreadcrum'
 import HomeSearchModelBegin from '../Component/Home/HomeSearchModelBegin'
 import AboutSroll from '../Component/About/AboutSroll'
+import BlogBreadcrum from '../Component/Blog/BlogBreadcrum'
+import HomeBottomFooter from '../Component/Home/HomeBottomFooter'
+import BlogArea from '../Component/Blog/BlogArea'
 
 const Blog = () => {
   return (
@@ -13,11 +16,12 @@ const Blog = () => {
         <HomeHeader/>
     </header>
     <main>
-        <AboutBreadcrum/>
+        <BlogBreadcrum/>
+        {/* <AboutBreadcrum/> */}
         {/* <!-- breadcrumb End--> */}
         {/* <!-- Hero Area End--> */}
         {/* <!--? Blog Area Start--> */}
-    
+        <BlogArea/>
         {/* <!-- Blog Area End --> */}
     </main>
     <footer>
@@ -98,21 +102,7 @@ const Blog = () => {
 </div>
 </div>
 {/* <!-- footer-bottom area --> */}
-<div class="footer-bottom-area">
-    <div class="container">
-        <div class="footer-border">
-           <div class="row d-flex align-items-center">
-               <div class="col-xl-12 ">
-                   <div class="footer-copy-right text-center">
-                       {/* <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                          Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p> */}
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+        <HomeBottomFooter/>
   {/* <!-- Footer End--> */}
 </footer>
 {/* <!--? Search model Begin --> */}

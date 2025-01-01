@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const AboutBreadcrum = () => {
+const BlogBreadcrum = () => {
   return (
     <div>
                 <div class="page-notification">
@@ -11,7 +11,7 @@ const AboutBreadcrum = () => {
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
                                 <li class="breadcrumb-item"><Link to="/home">Home</Link></li>
-                                <li class="breadcrumb-item"><a href="#">about</a></li> 
+                                <li class="breadcrumb-item"><a href="#">blog</a></li> 
                             </ol>
                         </nav>
                     </div>
@@ -22,4 +22,4 @@ const AboutBreadcrum = () => {
   )
 }
 
-export default AboutBreadcrum
+export default BlogBreadcrum

@@ -1,9 +1,11 @@
 import React from 'react'
 import HomePreloader from '../Component/Home/HomePreloader'
 import HomeHeader from '../Component/Home/HomeHeader'
-import AboutBreadcrum from '../Component/About/AboutBreadcrum'
+import ContactBreadcrum from '../Component/Contact/ContactBreadcrum'
 import HomeSearchModelBegin from '../Component/Home/HomeSearchModelBegin'
 import AboutSroll from '../Component/About/AboutSroll'
+import ContactArea from '../Component/Contact/ContactArea'
+ 
 
 const Contact = () => {
   return (
@@ -18,10 +20,12 @@ const Contact = () => {
     </header>
     <main>
         {/* <!-- breadcrumb Start--> */}
-        <AboutBreadcrum/>
+        <ContactBreadcrum/>
         {/* <!-- breadcrumb End--> */}
         {/* <!-- Hero Area End--> */}
+        
         {/* <!--?  Contact Area start  --> */}
+        <ContactArea/>
 
         {/* <!-- Contact Area End --> */}
     </main>

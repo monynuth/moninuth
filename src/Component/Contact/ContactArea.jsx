@@ -11,7 +11,7 @@ const ContactArea = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192541988254!2d-122.08424968468156!3d37.422065979822506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5c3510e34f1%3A0x69b30a22f4b2dbd7!2sGoogleplex!5e0!3m2!1sen!2sus!4v1631777868294!5m2!1sen!2sus"
                 width="100%"
                 height="480"
-                style="border:0;"
+                style= {{border: '0;'}}
                 allowfullscreen=""
                 loading="lazy">
             </iframe>

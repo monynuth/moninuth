@@ -16,10 +16,19 @@ const Home = () => {
     <body class="full-wrapper">
     <HomePreloader/>
     <HomeHeader/>
+    
+    {/* <!-- header end --> */}
     <main>
+        {/* <!--? Hero Area Start--> */}
         <HomeHeroArea/>
+        {/* <!-- End Hero --> */}
+        {/* <!--? Popular Items Start --> */}
         <HomeItems/>
+{/* <!-- Popular Items End --> */}
+{/* <!--? New Arrival Start --> */}
         <HomeNewArrival/>
+{/* <!--? New Arrival End --> */}
+{/* <!--? collection --> */}
         <HomeCollection/>
 {/* <!-- End collection --> */}
 {/* <!--? Popular Locations Start 01--> */}

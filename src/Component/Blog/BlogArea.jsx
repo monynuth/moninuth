@@ -18,7 +18,7 @@ const BlogArea = () => {
                                 </div>
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                        <h2 class="blog-head" style={{color:' #2d2d2d;'}}>Google inks pact for new 35-storey office</h2>
                                     </a>
                                     <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                     he earth it first without heaven in place seed it second morning saying.</p>
@@ -38,7 +38,7 @@ const BlogArea = () => {
                                 </div>
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                        <h2 class="blog-head" style={{color:' #2d2d2d;'}}>Google inks pact for new 35-storey office</h2>
                                     </a>
                                     <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                     he earth it first without heaven in place seed it second morning saying.</p>
@@ -58,7 +58,7 @@ const BlogArea = () => {
                                 </div>
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                        <h2 class="blog-head" style={{color:' #2d2d2d;'}}>Google inks pact for new 35-storey office</h2>
                                     </a>
                                     <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                     he earth it first without heaven in place seed it second morning saying.</p>
@@ -78,7 +78,7 @@ const BlogArea = () => {
                                 </div>
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                        <h2 class="blog-head" style={{color:' #2d2d2d;'}}>Google inks pact for new 35-storey office</h2>
                                     </a>
                                     <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                     he earth it first without heaven in place seed it second morning saying.</p>
@@ -98,7 +98,7 @@ const BlogArea = () => {
                                 </div>
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                        <h2 class="blog-head" style={{color:' #2d2d2d;'}}>Google inks pact for new 35-storey office</h2>
                                     </a>
                                     <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                     he earth it first without heaven in place seed it second morning saying.</p>
@@ -149,7 +149,7 @@ const BlogArea = () => {
                                 </form>
                             </aside>
                             <aside class="single_sidebar_widget post_category_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
+                                <h4 class="widget_title" style={{color:' #2d2d2d;'}}>Category</h4>
                                 <ul class="list cat-list">
                                     <li>
                                         <a href="#" class="d-flex">
@@ -190,12 +190,12 @@ const BlogArea = () => {
                                 </ul>
                             </aside>
                             <aside class="single_sidebar_widget popular_post_widget">
-                                <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
+                                <h3 class="widget_title" style={{color:' #2d2d2d;'}}>Recent Post</h3>
                                 <div class="media post_item">
                                     <img src="assets/img/post/post_1.png" alt="post"/>
                                     <div class="media-body">
                                         <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">From life was you fish...</h3>
+                                            <h3 style={{color:' #2d2d2d;'}}>From life was you fish...</h3>
                                         </a>
                                         <p>January 12, 2019</p>
                                     </div>
@@ -204,7 +204,7 @@ const BlogArea = () => {
                                     <img src="assets/img/post/post_2.png" alt="post"/>
                                     <div class="media-body">
                                         <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">The Amazing Hubble</h3>
+                                            <h3 style={{color:' #2d2d2d;'}}>The Amazing Hubble</h3>
                                         </a>
                                         <p>02 Hours ago</p>
                                     </div>
@@ -213,7 +213,7 @@ const BlogArea = () => {
                                     <img src="assets/img/post/post_3.png" alt="post"/>
                                     <div class="media-body">
                                         <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">Astronomy Or Astrology</h3>
+                                            <h3 sstyle={{color:' #2d2d2d;'}}>Astronomy Or Astrology</h3>
                                         </a>
                                         <p>03 Hours ago</p>
                                     </div>
@@ -222,14 +222,14 @@ const BlogArea = () => {
                                     <img src="assets/img/post/post_4.png" alt="post"/>
                                     <div class="media-body">
                                         <a href="blog_details.html">
-                                            <h3 style="color: #2d2d2d;">Asteroids telescope</h3>
+                                            <h3 style={{color:' #2d2d2d;'}}>Asteroids telescope</h3>
                                         </a>
                                         <p>01 Hours ago</p>
                                     </div>
                                 </div>
                             </aside>
                             <aside class="single_sidebar_widget tag_cloud_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
+                                <h4 class="widget_title" style={{color:' #2d2d2d;'}}>Tag Clouds</h4>
                                 <ul class="list">
                                     <li>
                                         <a href="#">project</a>
@@ -259,7 +259,7 @@ const BlogArea = () => {
                             </aside>
 
                             <aside class="single_sidebar_widget instagram_feeds">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
+                                <h4 class="widget_title" style={{color:' #2d2d2d;'}}>Instagram Feeds</h4>
                                 <ul class="instagram_row flex-wrap">
                                     <li>
                                         <a href="#">
@@ -294,7 +294,7 @@ const BlogArea = () => {
                                 </ul>
                             </aside>
                             <aside class="single_sidebar_widget newsletter_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
+                                <h4 class="widget_title" style={{color:' #2d2d2d;'}}>Newsletter</h4>
                                 <form action="#">
                                     <div class="form-group">
                                         <input type="email" class="form-control" onfocus="this.placeholder = ''"
