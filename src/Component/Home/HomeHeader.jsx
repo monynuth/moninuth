@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../img/logo/logo.png'
+import { useCart } from '../CartContext'
 
-const HomeHeader = () => {
+const HomeHeader = ({ setShowCart }) => {
+    const { cart } = useCart();
   return (
     <header>
         {/* <!-- Header Start --> */}
@@ -19,14 +21,14 @@ const HomeHeader = () => {
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><Link to="/home">Home</Link></li> 
+                                        <li><Link to="/home">Home</Link></li>
                                         <li><Link to="/shop">Shop</Link></li>
                                         <li><Link to="/about">About</Link></li>
                                         <li><Link to="/blog">Blog</Link></li>
                                         <li><Link to="/contact">Contact</Link></li>
                                     </ul>
                                 </nav>
-                            </div>   
+                            </div>
                         </div>
                         <div class="header-right1 d-flex align-items-center">
                             {/* <!-- Social --> */}
@@ -44,9 +46,9 @@ const HomeHeader = () => {
                                         </div>
                                     </li>
                                     <li>
-                                        <div class="card-stor">
+                                        <div class="card-stor" onClick={() => setShowCart(true)}>
                                             <img src="assets/img/gallery/card.svg" alt=""/>
-                                            <span>0</span>
+                                            <span>{cart.length}</span>
                                         </div>
                                     </li>
                                 </ul>

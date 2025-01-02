@@ -5,19 +5,22 @@ import About from './Pages/About';
 import Shop from './Pages/Shop';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
+import { CartProvider } from './Component/CartContext';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path='/' element={<Navigate to="/home"/>} />
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        <Route path='/shop' element={<Shop/>}/>
-        <Route path='/blog' element={<Blog/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-      </Routes>
-    </Router>
+    <CartProvider>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Navigate to="/home"/>} />
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/shop' element={<Shop/>}/>
+          <Route path='/blog' element={<Blog/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 

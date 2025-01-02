@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HomePreloader from '../Component/Home/HomePreloader'
 import HomeHeader from '../Component/Home/HomeHeader'
 import HomeHeroArea from '../Component/Home/HomeHeroArea'
@@ -10,42 +10,27 @@ import HomeServices from '../Component/Home/HomeServices'
 import HomeFooterStart from '../Component/Home/HomeFooterStart'
 import HomeFooterBottomArea from '../Component/Home/HomeFooterBottomArea'
 import HomeSearchModelBegin from '../Component/Home/HomeSearchModelBegin'
+import HomeCart from '../Component/Home/HomeCart'
 
 const Home = () => {
+
+  const [showCart, setShowCart] = useState(false);
+
   return (
     <body class="full-wrapper">
     <HomePreloader/>
-    <HomeHeader/>
-    
-    {/* <!-- header end --> */}
-    <main>
-        {/* <!--? Hero Area Start--> */}
-        <HomeHeroArea/>
-        {/* <!-- End Hero --> */}
-        {/* <!--? Popular Items Start --> */}
-        <HomeItems/>
-{/* <!-- Popular Items End --> */}
-{/* <!--? New Arrival Start --> */}
-        <HomeNewArrival/>
-{/* <!--? New Arrival End --> */}
-{/* <!--? collection --> */}
-        <HomeCollection/>
-{/* <!-- End collection --> */}
-{/* <!--? Popular Locations Start 01--> */}
-        <HomePopular/>
-{/* <!-- Popular Locations End --> */}
-{/* <!--? Services Area Start --> */}
-        <HomeServices/>
-{/* <!--? Services Area End --> */}
-</main>
-<footer>
-    {/* <!-- Footer Start--> */}
+      <HomeHeader setShowCart={setShowCart} />
+      {showCart && <HomeCart setShowCart={setShowCart} />}
+      <HomeHeroArea />
+      <HomeItems />
+      <HomeNewArrival />
+      <HomeCollection />
+      <HomePopular />
+      <HomeServices />
+    <footer>
         <HomeFooterStart/>
-{/* <!-- footer-bottom area --> */}
         <HomeFooterBottomArea/>
-  {/* <!-- Footer End--> */}
-</footer>
-{/* <!--? Search model Begin --> */}
+    </footer>
         <HomeSearchModelBegin/>
 </body>
   )
