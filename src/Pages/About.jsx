@@ -9,11 +9,12 @@ import AboutSroll from '../Component/About/AboutSroll'
 import HomeBottomFooter from '../Component/Home/HomeBottomFooter'
 import HomeFooterStart from '../Component/Home/HomeFooterStart'
 import HomeItems from '../Component/Home/HomeItems'
+import withPreloader from '../Component/withPreloader'
 
 const About = () => {
   return (
     <body class="full-wrapper">
-        <HomePreloader/>
+        {/* <HomePreloader/> */}
         <HomeHeader/>
     <main>
         <AboutBreadcrum/>
@@ -30,4 +31,4 @@ const About = () => {
   )
 }
 
-export default About
+export default withPreloader(About)

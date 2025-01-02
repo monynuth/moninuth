@@ -7,11 +7,12 @@ import BlogBreadcrum from '../Component/Blog/BlogBreadcrum'
 import HomeBottomFooter from '../Component/Home/HomeBottomFooter'
 import BlogArea from '../Component/Blog/BlogArea'
 import BlogFooter from '../Component/Blog/BlogFooter'
+import withPreloader from '../Component/withPreloader'
 
 const Blog = () => {
   return (
     <body class="full-wrapper">
-    <HomePreloader/>
+    {/* <HomePreloader/> */}
     <header>
         <HomeHeader/>
     </header>
@@ -29,4 +30,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default withPreloader(Blog)

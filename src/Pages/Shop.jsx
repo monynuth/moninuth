@@ -11,45 +11,32 @@ import ShopServiceArea from '../Component/Shop/ShopServiceArea'
 import HomeItems from '../Component/Home/HomeItems'
 import HomeCart from '../Component/Home/HomeCart'
 import ShopBreadcrumb from '../Component/Shop/ShopBreadcrum'
+import withPreloader from '../Component/withPreloader'
 
 const Shop = () => {
     const [showCart, setShowCart] = useState(false);
   return (
     <body class="full-wrapper">
-    <HomePreloader/>
+    {/* <HomePreloader/> */}
     <HomeHeader setShowCart={setShowCart} />
     {showCart && <HomeCart setShowCart={setShowCart} />}
-    {/* <!-- header end --> */}
-    <main>
-        {/* <!-- breadcrumb Start--> */}
-        <ShopBreadcrumb/>
-        {/* <!-- listing Area Start --> */}
-    <ShopListingArea/>
-{/* <!-- listing-area Area End --> */}
-{/* <!--? Popular Items Start --> */}
-    {/* <ShopPopularItems/> */}
-    <HomeItems/>
-{/* <!-- Popular Items End --> */}
-{/* <!--? Services Area Start --> */}
-    <ShopServiceArea/>
-{/* <!--? Services Area End --> */}
-</main>
 
-<footer>
-    {/* <!-- Footer Start--> */}
-    <HomeFooterStart/>
-{/* <!-- footer-bottom area --> */}
-    <HomeFooterBottomArea/>
-  {/* <!-- Footer End--> */}
-</footer>
-{/* <!--? Search model Begin --> */}
-    <HomeSearchModelBegin/>
-{/* <!-- Search model end --> */}
-{/* <!-- Scroll Up --> */}
-    <AboutSroll/>
+    <main>
+        <ShopBreadcrumb/>
+        <ShopListingArea/>
+        <HomeItems/>
+        <ShopServiceArea/>
+    </main>
+
+    <footer>
+        <HomeFooterStart/>
+        <HomeFooterBottomArea/>
+    </footer>
+        <HomeSearchModelBegin/>
+        <AboutSroll/>
 
 </body>
   )
 }
 
-export default Shop
+export default withPreloader(Shop)

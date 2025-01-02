@@ -11,14 +11,14 @@ import HomeFooterStart from '../Component/Home/HomeFooterStart'
 import HomeFooterBottomArea from '../Component/Home/HomeFooterBottomArea'
 import HomeSearchModelBegin from '../Component/Home/HomeSearchModelBegin'
 import HomeCart from '../Component/Home/HomeCart'
-
+import withPreloader from '../Component/withPreloader'
 const Home = () => {
 
   const [showCart, setShowCart] = useState(false);
 
   return (
     <body class="full-wrapper">
-    <HomePreloader/>
+    {/* <HomePreloader/> */}
       <HomeHeader setShowCart={setShowCart} />
       {showCart && <HomeCart setShowCart={setShowCart} />}
       <HomeHeroArea />
@@ -36,4 +36,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default withPreloader(Home)

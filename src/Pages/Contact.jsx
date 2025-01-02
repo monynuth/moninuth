@@ -7,12 +7,12 @@ import AboutSroll from '../Component/About/AboutSroll'
 import ContactArea from '../Component/Contact/ContactArea'
 import ContactFooter from '../Component/Contact/ContactFooter'
 import ContactBottomArea from '../Component/Contact/ContactBottomArea'
- 
+ import withPreloader from '../Component/withPreloader'
 
 const Contact = () => {
   return (
     <body class="full-wrapper">
-    <HomePreloader/>
+    {/* <HomePreloader/> */}
     <header>
         <HomeHeader/>
     </header>
@@ -31,4 +31,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default withPreloader(Contact)
